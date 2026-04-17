@@ -1,0 +1,19 @@
+$ ./pes log
+commit e53dae36ae3cc8106c3d4978756440206981e9129aba8b74deedf8cbbe49c9bb
+Author: Shishir Hegde <PES1UG24CS438>
+Date:   1776410704
+
+    Add farewell
+
+commit 308700228a6d4cfb52830a97022dc51c044ac21b3cb974e7e640c9f3900c8dd7
+Author: Shishir Hegde <PES1UG24CS438>
+Date:   1776410704
+
+    Add world
+
+commit 8697257e5cf04fe6bcd821590b61b21b0ef675582183629b41831250423f8743
+Author: Shishir Hegde <PES1UG24CS438>
+Date:   1776410704
+
+    Initial commit
+
