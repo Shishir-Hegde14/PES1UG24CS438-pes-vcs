@@ -109,6 +109,7 @@ static int has_dir_name(const char seen_dirs[][256], int count, const char *name
 static int load_index_snapshot(TreeIndex *index_out) {
     index_out->count = 0;
 
+    // Keep tree.c self-contained: test_tree links without index.o.
     FILE *f = fopen(INDEX_FILE, "r");
     if (!f) return -1;
 
