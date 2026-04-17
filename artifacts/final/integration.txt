@@ -1,0 +1,81 @@
+$ make test-integration
+make: 'pes' is up to date.
+=== PES-VCS Integration Test ===
+
+--- Repository Initialization ---
+Initialized empty PES repository in .pes/
+PASS: .pes/objects exists
+PASS: .pes/refs/heads exists
+PASS: .pes/HEAD exists
+
+--- Staging Files ---
+Status after add:
+Staged changes:
+  staged:     file.txt
+  staged:     hello.txt
+
+Unstaged changes:
+  (nothing to show)
+
+Untracked files:
+  (nothing to show)
+
+
+--- First Commit ---
+Committed: 6ddca35b2fcd... Initial commit
+
+Log after first commit:
+commit 6ddca35b2fcd1089ed4b20178ce8e373c946adc14eb8e3128d0cc5c9d8085127
+Author: Shishir Hegde <PES1UG24CS438>
+Date:   1776429383
+
+    Initial commit
+
+
+--- Second Commit ---
+Committed: 274578ac92c4... Update file.txt
+
+--- Third Commit ---
+Committed: d19506b6fc9a... Add farewell
+
+--- Full History ---
+commit d19506b6fc9a1b5e91a67c23fe7535bb3b7b89520ebe02707bd6247056054a5d
+Author: Shishir Hegde <PES1UG24CS438>
+Date:   1776429384
+
+    Add farewell
+
+commit 274578ac92c405f52c98a69974c31beb4dbb86f62e7b747bb44e46d06e2771db
+Author: Shishir Hegde <PES1UG24CS438>
+Date:   1776429383
+
+    Update file.txt
+
+commit 6ddca35b2fcd1089ed4b20178ce8e373c946adc14eb8e3128d0cc5c9d8085127
+Author: Shishir Hegde <PES1UG24CS438>
+Date:   1776429383
+
+    Initial commit
+
+
+--- Reference Chain ---
+HEAD:
+ref: refs/heads/main
+refs/heads/main:
+d19506b6fc9a1b5e91a67c23fe7535bb3b7b89520ebe02707bd6247056054a5d
+
+--- Object Store ---
+Objects created:
+10
+.pes/objects/0b/d69098bd9b9cc5934a610ab65da429b525361147faa7b5b922919e9a23143d
+.pes/objects/10/1f28a12274233d119fd3c8d7c7216054ddb5605f3bae21c6fb6ee3c4c7cbfa
+.pes/objects/27/4578ac92c405f52c98a69974c31beb4dbb86f62e7b747bb44e46d06e2771db
+.pes/objects/58/a67ed1c161a4e89a110968310fe31e39920ef68d4c7c7e0d6695797533f50d
+.pes/objects/6d/dca35b2fcd1089ed4b20178ce8e373c946adc14eb8e3128d0cc5c9d8085127
+.pes/objects/ab/5824a9ec1ef505b5480b3e37cd50d9c80be55012cabe0ca572dbf959788299
+.pes/objects/b1/7b838c5951aa88c09635c5895ef7e08f7fa1974d901ce282f30e08de0ccd92
+.pes/objects/d0/7733c25d2d137b7574be8c5542b562bf48bafeaa3829f61f75b8d10d5350f9
+.pes/objects/d1/9506b6fc9a1b5e91a67c23fe7535bb3b7b89520ebe02707bd6247056054a5d
+.pes/objects/db/07a1451ca9544dbf66d769b505377d765efae7adc6b97b75cc9d2b3b3da6ff
+
+=== All integration tests completed ===
