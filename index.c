@@ -190,6 +190,7 @@ int index_load(Index *index) {
 int index_save(const Index *index) {
     IndexEntry *sorted_entries = NULL;
     if (index->count > 0) {
+        // Keep sorting off the stack: MAX_INDEX_ENTRIES is large.
         sorted_entries = malloc((size_t)index->count * sizeof(IndexEntry));
         if (!sorted_entries) return -1;
         memcpy(sorted_entries, index->entries, (size_t)index->count * sizeof(IndexEntry));
